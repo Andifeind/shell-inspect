@@ -8,6 +8,9 @@ ShellInspect is a shell script testing library for node.js and the Mocha testing
 ## Example:
 
 ```js
+const inspect = require('inspectjs')
+const shellInspect = require('shell-inspectjs')
+
 describe('cow say'() => {
   it('should say hello', () => {
     return shellInspect.cmd('cowsay "Hello World!"').test((ctx) => {
@@ -36,9 +39,11 @@ Defines the current working dir. The working dir is set to `process.cwd()` per d
 
 ### .test(*func* callback) - Callback method
 
-Gets called when script had finished. The callback gets called with and context argument.
+Gets called when script has terminated. The callback method takes a context as its own argument.
 
-The context object has as few properties:
+#### callback(*obj* ctx)
+
+Properties:
 
 Property | Description
 ---------|------------
@@ -49,6 +54,8 @@ Property | Description
 `stdout` | The output stream
 `stderr` | The error stream
 `runtime` | The script runtime as a Supertime duration object
+
+#### Example:
 
 ```js
 shellInspect.cmd('git status -s').test((ctx) => {
