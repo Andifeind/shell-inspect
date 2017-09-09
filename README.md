@@ -1,6 +1,8 @@
 shell-inspect
 =============
 
+[![Build Status](https://travis-ci.org/Andifeind/shell-inspect.svg)](https://travis-ci.org/Andifeind/shell-inspect)
+
 ShellInspect is a shell script testing library for node.js and the Mocha testing framework.
 
 ## Example:
