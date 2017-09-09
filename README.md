@@ -35,7 +35,7 @@ shellInspect.cmd('git status -s').test(() => {
 
 ### .cwd(*str* workingDir) - Set working dir
 
-Defines the current working dir. The working dir is set to `process.cwd()` per default.
+Defines the current working dir. The default working dir is `process.cwd()`.
 
 ### .test(*func* callback) - Callback method
 
