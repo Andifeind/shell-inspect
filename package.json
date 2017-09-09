@@ -1,0 +1,43 @@
+{
+  "name": "shell-inspect",
+  "version": "0.0.0",
+  "description": "Shell script inspection library",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha --reporter lagoon-reporter test/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andifeind/shell-inspect.git"
+  },
+  "keywords": [
+    "shell",
+    "bash",
+    "test",
+    "inspect",
+    "inspectjs",
+    "bdd",
+    "shell-test",
+    "shelltest",
+    "exec",
+    "spawn",
+    "mocha",
+    "unit",
+    "unittest"
+  ],
+  "author": "Andi Heinkelein <andifeind@noname-media.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andifeind/shell-inspect/issues"
+  },
+  "homepage": "https://github.com/andifeind/shell-inspect#readme",
+  "devDependencies": {
+    "inspect.js": "^1.6.1",
+    "lagoon-reporter": "^0.3.4",
+    "mocha": "^3.5.0",
+    "sinon": "^3.2.1"
+  },
+  "dependencies": {
+    "supertime": "^1.0.0"
+  }
+}
