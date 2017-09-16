@@ -43,7 +43,12 @@ class ShellInspect {
         const ctx = Object.assign({
           text: stdout,
           err: stderr,
-          runtime: duration
+          runtime: duration,
+          print() {
+            console.log(' \u2702', ' –'.repeat(14), ' stdout ', ' –'.repeat(14)) // eslint-disable-line no-console
+            console.log(stdout) // eslint-disable-line no-console
+            console.log(' \u2702', ' –'.repeat(33)) // eslint-disable-line no-console
+          }
         }, child)
 
         resolve(fn(ctx))
